@@ -8,5 +8,9 @@
     "start": "node server.js"
   },
   "author": "FJD",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.3",
+    "request": "^2.81.0"
+  }
 }
