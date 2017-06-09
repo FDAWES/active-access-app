@@ -3,12 +3,12 @@ request = require('request');
 
 var app = express();
 
-var url = 'http://api.amp.active.com';
+var baseUrl = 'http://api.amp.active.com';
 
 app.get('/', function(req, res) {
-  res.send(200, '<p>See documentation for API usage.<p>');// +
-                //'<p><a href="https://github.com/danasilver/hotwire">Documentation for this project</a></p>' +
-                //'<p><a href="http://developer.hotwire.com/docs/">Hotwire Documentation</a></p>')
+  res.send(200, '<h1>See documentation for API usage.<h1>');// +
+                '<p><a href="https://github.com/FDAWES/active-access-app">Documentation for this project</a></p>' +
+                '<p><a href="http://developer.active.com/docs/read/v2_Activity_API_Search">Active Access Documentation</a></p>')
 });
 
 app.get('*', function(req, res) {
@@ -19,7 +19,7 @@ app.get('*', function(req, res) {
 
   console.log("Original URL: " + req.originalUrl);
 
-  request.get(url + req.originalUrl, function(err, r_res, body) {
+  request.get(baseUrl + req.originalUrl, function(err, r_res, body) {
     if (err) res.send(500);
     else res.send(body);
   });
