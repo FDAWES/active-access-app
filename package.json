@@ -4,13 +4,15 @@
   "description": "Server used to execute requests to a specific api.",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha",
     "start": "node server.js"
   },
   "author": "FJD",
   "license": "ISC",
   "dependencies": {
+    "chai": "^4.0.2",
     "express": "^4.15.3",
+    "mocha": "^3.4.2",
     "request": "^2.81.0"
   }
 }
