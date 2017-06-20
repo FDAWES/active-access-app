@@ -1,3 +1,5 @@
+###Status
+[![Build Status] (https://travis-ci.org/FDAWES/active-access-app)](https://travis-ci.org/FDAWES/active-access-app)
 ## active-access-app
 
 Provides a passthrough to the Active Access api.
